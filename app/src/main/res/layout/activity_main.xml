@@ -5,22 +5,18 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@color/teal_700"
+    android:padding="50dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Button Click Demo"
-        android:textSize="25sp"
+        android:textSize="35sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
         android:textStyle="bold"
         android:textColor="@color/white"
 
@@ -28,10 +24,22 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click me for welcome toast"
+        android:text="Click me!"
+        android:textSize="30sp"
         android:background="@color/white"
         android:textStyle="bold"
         android:textColor="@color/purple_200"
         android:onClick="openAToast"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next page!"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/purple_200"
+        android:onClick="SecondPage"
         />
 </LinearLayout>

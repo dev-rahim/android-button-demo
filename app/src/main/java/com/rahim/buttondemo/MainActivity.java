@@ -1,5 +1,6 @@
 package com.rahim.buttondemo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openAToast(View view) {
-        Toast.makeText(MainActivity.this,"Button Clicked",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,"Hi, I'm a Toast",Toast.LENGTH_SHORT).show();
 
+
+    }
+
+    public void SecondPage(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
